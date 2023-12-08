@@ -12,7 +12,8 @@ const Hero = () => {
           Desenvolvedor, Full-Stack, e gamer amador.
         </h1>
         <p className="sub-title">
-          jjjjjjjjjjjjjjjjjjjjjjjjj
+          
+          Meu nome é Jânio Júnior, sou um desenvolvedor Full-Stack freelancer com base em Recife, Pernambuco. Possuo formação em Análise e Desenvolvimento de Sistemas, além de mais de dois anos de experiência na área. Tenho o compromisso constante de aprimorar minhas habilidades e manter-me atualizado no dinâmico universo da tecnologia.
         </p>
 
         <div className="all-icons flex">
