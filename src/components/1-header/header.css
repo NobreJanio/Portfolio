@@ -63,8 +63,14 @@ header.flex {
     color: var(--subtitle);
     border: 1px solid rgba(244, 165, 96, 0.249);
     transition: 0.2s;
+    box-shadow: 1px 1px 40px;
   }
   
+  header .icon-sun {
+    color:orange
+  }
+
+
   header .icon-menu:hover,
   header button.mode:hover {
     color: var(--title);

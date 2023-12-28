@@ -1,24 +1,83 @@
+import { useState } from "react";
 import "./main.css";
+import { myProjects } from "./myProjects";
+
+
+
 const Main = () => {
+  const [currentActive, setcurrentActive] = useState("all");
+  const [arr, setArr] = useState(myProjects);
+
+  const handleClick = (buttonCategory) => {
+    setcurrentActive(buttonCategory);
+
+    const newArr = myProjects.filter((item) => {
+      const temCategoria = item.category.includes(buttonCategory);
+        return temCategoria;
+      });
+
+    setArr(newArr);
+  };
+
   return (
     <main className="flex">
-      
       <section className="flex  left-section">
-        <button className="active">all projects</button>
-        <button>HTML & CSS</button>
-        <button>JavaScript</button>
-        <button>React & MUI</button>
-        <button>Node & Express</button>
+        <button
+          onClick={() => {
+            setcurrentActive("all");
+            setArr(myProjects)
+          }}
+          className={currentActive === "all" ? "active" : null}
+        >
+          All projects
+        </button>
+
+        <button
+          onClick={() => {
+            handleClick("css");
+            
+          }}
+          className={currentActive === "css" ? "active" : null}
+        >
+          HTML & CSS
+        </button>
+
+        <button
+          onClick={() => {
+            handleClick("js");
+          }}
+          className={currentActive === "js" ? "active" : null}
+        >
+          JavaScript
+        </button>
+        
+        <button
+          onClick={() => {
+            handleClick("react");
+          }}
+          className={currentActive === "react" ? "active" : null}
+        >
+          React
+        </button>
+        
+        <button
+          onClick={() => {
+            handleClick("angular");
+          }}
+          className={currentActive === "angular" ? "active" : null}
+        >
+          Angular & Express
+        </button>
       </section>
 
       <section className=" flex right-section">
-        {["aa", "bb", "cc", 1, 7].map((item) => {
+        {arr.map((item) => {
           return (
-            <article key={item} className="  card">
-              <img width={266} src="./1.jpg" alt="" />
+            <article key={item.imgPath} className="  card">
+              <img width={266} src={item.imgPath} alt="" />
 
               <div style={{ width: "266px" }} className="box">
-                <h1 className="title">Landing Page 2 </h1>
+                <h1 className="title">{item.projectTitle}</h1>
                 <p className="sub-title">
                   Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
                   tempore dolor in, accusantium laudantium accusamus.
