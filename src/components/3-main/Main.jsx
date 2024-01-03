@@ -79,6 +79,7 @@ const Main = () => {
                 transition={{ type: "spring", damping: 8, stiffness: 50}}
                 key={item.imgPath}
                 className="card"
+                
               >
                 <img width={266} src={item.imgPath} alt="" />
 
@@ -92,7 +93,7 @@ const Main = () => {
                       <div className="icon-github"></div>
                     </div>
 
-                    <a className="link flex" href="">
+                    <a className="link flex" href={item.link} target="_blank">
                       more
                       <span
                         style={{ alignSelf: "end" }}
