@@ -15,7 +15,7 @@ const Hero = () => {
           animate={{transform: "scale(1.1)"}}
           transition={{dumping: 6, type: "spring", stiffness: 100}}
           
-          src="./me.jpg" className="avatar" alt="" />
+          src="./me-modified.png" className="avatar" alt="" />
           <div className="icon-verified"></div>
         </div>
 

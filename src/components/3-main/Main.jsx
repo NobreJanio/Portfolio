@@ -84,10 +84,7 @@ const Main = () => {
 
                 <div style={{ width: "266px" }} className="box">
                   <h1 className="title">{item.projectTitle}</h1>
-                  <p className="sub-title">
-                    Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                    tempore dolor in, accusantium laudantium accusamus.
-                  </p>
+                  <p className="sub-title">{item.descrition}</p>
 
                   <div className="flex icons">
                     <div style={{ gap: "11px" }} className="flex">

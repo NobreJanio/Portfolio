@@ -3,7 +3,9 @@ import "./header.css";
 
 const Header = () => {
   const [showModal, setshowModal] = useState(false);
-  const [theme, setTheme] = useState(localStorage.getItem("currentMode") ?? "dark");
+  const [theme, setTheme] = useState(
+    localStorage.getItem("currentMode") ?? "dark"
+  );
 
   useEffect(() => {
     if (theme === "light") {
@@ -14,7 +16,6 @@ const Header = () => {
       document.body.classList.add("dark");
     }
   }, [theme]);
-
 
   return (
     <header className="flex">
@@ -30,40 +31,35 @@ const Header = () => {
 
       <nav>
         <ul className="flex">
+          
           <li>
-            <a href="">About</a>
+            <a href="#Projects">Projetos</a>
           </li>
 
           <li>
-            <a href="">Articles</a>
-          </li>
-          <li>
-            <a href="">Projects</a>
-          </li>
-          <li>
-            <a href="">Speaking</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
+            <a href="#Contact" 
+            >Contato</a>
           </li>
         </ul>
       </nav>
 
-      <button onClick={() => {
-        // Send volume do LS
-        localStorage.setItem("currentMode", theme === "dark" ? "light" : "dark")
+      <button
+        onClick={() => {
+          // Send volume do LS
+          localStorage.setItem(
+            "currentMode",
+            theme === "dark" ? "light" : "dark"
+          );
 
-        // get volume from LS
-        setTheme(localStorage.getItem("currentMode"))
-
-
-
-      }} className="mode flex">
-        
+          // get volume from LS
+          setTheme(localStorage.getItem("currentMode"));
+        }}
+        className="mode flex"
+      >
         {theme === "dark" ? (
           <span className="icon-moon-o"> </span>
-          ) : (
-            <span className="icon-sun"> </span>
+        ) : (
+          <span className="icon-sun"> </span>
         )}
       </button>
 
@@ -78,20 +74,13 @@ const Header = () => {
                 }}
               />
             </li>
+            
             <li>
-              <a href="">About</a>
+              <a href="#Projects">Projetos</a>
             </li>
+
             <li>
-              <a href="">Articles</a>
-            </li>
-            <li>
-              <a href="">Projects</a>
-            </li>
-            <li>
-              <a href="">Speaking</a>
-            </li>
-            <li>
-              <a href="">Uses</a>
+              <a href="#Contact">Contatos</a>
             </li>
           </ul>
         </div>
