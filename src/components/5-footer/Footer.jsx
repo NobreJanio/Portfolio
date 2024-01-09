@@ -12,7 +12,7 @@ const Footer = () => {
         </li>
       </ul>
 
-      <p>© 2023 Janio Junior. All rights reserved.</p>
+      <p>© 2023 Janio Junior. Todos os direitos reservados.</p>
     </footer>
   );
 };
