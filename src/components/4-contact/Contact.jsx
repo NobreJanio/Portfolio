@@ -20,7 +20,7 @@ const Contact = () => {
       <div style={{justifyContent: "space-between"}} className="flex">
         <form onSubmit={handleSubmit} className="">
           <div className="flex">
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email">Endereço Email:</label>
             <input
               autoComplete="off"
               required
