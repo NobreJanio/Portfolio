@@ -14,7 +14,7 @@ const Contact = () => {
         Contato
       </h1>
       <p className="sub-title">
-        Entre em contato comigo
+        Entre em contato comigo:
       </p>
 
       <div style={{justifyContent: "space-between"}} className="flex">
