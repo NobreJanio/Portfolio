@@ -5,16 +5,10 @@ const Footer = () => {
     <footer className="flex">
       <ul className="flex">
         <li>
-          <a href="">About</a>
+          <a href="#Projects">Projeto</a>
         </li>
         <li>
-          <a href="">Projects</a>
-        </li>
-        <li>
-          <a href="">Speaking</a>
-        </li>
-        <li>
-          <a href="">Uses</a>
+          <a href="#Contact">Contato</a>
         </li>
       </ul>
 

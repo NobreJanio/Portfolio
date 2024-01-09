@@ -20,7 +20,7 @@ const Contact = () => {
       <div style={{justifyContent: "space-between"}} className="flex">
         <form onSubmit={handleSubmit} className="">
           <div className="flex">
-            <label htmlFor="email">Email Address:</label>
+            <label htmlFor="email">Endereço Email :</label>
             <input
               autoComplete="off"
               required
@@ -36,7 +36,7 @@ const Contact = () => {
           </div>
 
           <div className="flex" style={{ marginTop: "24px" }}>
-            <label htmlFor="message">Your message:</label>
+            <label htmlFor="message">Sua messagem:</label>
             <textarea required name="message" id="message"></textarea>
             <ValidationError
               prefix="Message"
