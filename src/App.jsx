@@ -18,8 +18,6 @@ function App() {
 
   const [showSrollBTN, setshowScrollBTN] = useState(false);
 
-  
-
   return (
     <div id="up" className="container">
       <Header />

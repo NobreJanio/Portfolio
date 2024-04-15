@@ -13,10 +13,15 @@ export const myProjects = [
   { projectTitle: "Lista de tarefas",             category: ["js"], imgPath: "./13.png", descrition: "Lista de tarefas com a função de remover", link: "https://6595aafbf083ba0084096861--stunning-lebkuchen-a7f570.netlify.app/" },
   { projectTitle: "CRUD",                         category: ["js"], imgPath: "./12.png", descrition: "CRUD em Javascript", link: "https://6595aa9e847cc9006627dba1--dashing-bublanina-bbdca9.netlify.app/" },
   { projectTitle: "Instagram",                    category: ["js"], imgPath: "./14.png", descrition: "Layout da página de login do Instagram", link: "https://instadevclub.netlify.app/" },
+  { projectTitle: "Cardápio Digital",             category: ["js"], imgPath: "./16.png", descrition: "Cardápio Digital e Responsivo enviando os pedidos para whatsapp", link: "https://cardapio-one-lyart.vercel.app/" },
+
+
+  { projectTitle: "Node.js + MySQL",              category: ["node"], imgPath: "./15.png", descrition: "Porjeto em Node.js com MySQL para simular um CRUD", link: "https://github.com/NobreJanio/Nodejs-mysql-webapi.git" },
 
 
 
   { projectTitle: "angular project", category: ["angular"], imgPath: "./8.png", descrition: "Layout de um e-commerce feito em Angular e Express", link: "https://github.com/NobreJanio/projeto-angular1.git" },
 
   { projectTitle: "react project", category: ["react"], imgPath: "./9.png", descrition: "Próprio porffolio feito em React + Vite", link: "https://github.com/NobreJanio/Portfolio.git" }, 
+  { projectTitle: "react project", category: ["react"], imgPath: "./17.png", descrition: "Ecommerce com Strapi", link: "https://ecommerce-90e52.web.app" }
 ];

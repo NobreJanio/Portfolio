@@ -51,6 +51,15 @@ const Main = () => {
 
         <button
           onClick={() => {
+            handleClick("node");
+          }}
+          className={currentActive === "node" ? "active" : null}
+        >
+          Node.js + MySQL
+        </button>
+
+        <button
+          onClick={() => {
             handleClick("react");
           }}
           className={currentActive === "react" ? "active" : null}
@@ -93,7 +102,7 @@ const Main = () => {
                       <div className="icon-github"></div>
                     </div>
 
-                    <a className="link flex" href={item.link} target="_blank">
+                    <a className="link flex" href={item.link} target="_blank" rel="noreferrer">
                       more
                       <span
                         style={{ alignSelf: "end" }}
