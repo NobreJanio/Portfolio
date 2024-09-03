@@ -75,6 +75,24 @@ const Main = () => {
         >
           Angular & Express
         </button>
+
+        <button
+          onClick={() => {
+            handleClick("svelte");
+          }}
+          className={currentActive === "svelte" ? "active" : null}
+        >
+          Svelte
+        </button>
+
+        <button
+          onClick={() => {
+            handleClick("flutter");
+          }}
+          className={currentActive === "flutter" ? "active" : null}
+        >
+          Flutter
+        </button>
       </section>
 
       <section className=" flex right-section">
@@ -85,10 +103,10 @@ const Main = () => {
                 layout
                 initial={{ transform: "scale(0)" }}
                 animate={{ transform: "scale(1)" }}
-                transition={{ type: "spring", damping: 8, stiffness: 50}}
+                transition={{ type: "spring", damping: 8, stiffness: 50 }}
                 key={item.imgPath}
                 className="card"
-                
+
               >
                 <img width={266} src={item.imgPath} alt="" />
 
