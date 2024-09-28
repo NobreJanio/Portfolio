@@ -78,6 +78,15 @@ const Main = () => {
 
         <button
           onClick={() => {
+            handleClick("vue");
+          }}
+          className={currentActive === "vue" ? "active" : null}
+        >
+          Vue
+        </button>
+
+        <button
+          onClick={() => {
             handleClick("svelte");
           }}
           className={currentActive === "svelte" ? "active" : null}

@@ -10,27 +10,27 @@ const Hero = () => {
     <section className="hero flex">
       <div className="left-section">
         <div className="parent-avatar flex">
-          <motion.img 
-          initial={{transform: "scale(0)"}}
-          animate={{transform: "scale(1.1)"}}
-          transition={{dumping: 6, type: "spring", stiffness: 100}}
-          
-          src="./me-modified.png" className="avatar" alt="" />
+          <motion.img
+            initial={{ transform: "scale(0)" }}
+            animate={{ transform: "scale(1.1)" }}
+            transition={{ dumping: 6, type: "spring", stiffness: 100 }}
+
+            src="./me-modified.png" className="avatar" alt="" />
           <div className="icon-verified"></div>
         </div>
 
         <motion.h1
-        initial={{opacity: 0}}
-        animate={{opacity: 1}}
-        transition={{duration: 2}}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
 
-        className="title">
+          className="title">
           Desenvolvedor, Full-Stack e gamer amador.
         </motion.h1>
         <p className="sub-title">
           Meu nome é Jânio Júnior, sou um desenvolvedor Full-Stack freelancer
           com base em Recife, Pernambuco. Possuo formação em Análise e
-          Desenvolvimento de Sistemas, além de mais de dois anos de experiência
+          Desenvolvimento de Sistemas, além de mais de três anos de experiência
           na área. Tenho o compromisso constante de aprimorar minhas habilidades
           e manter-me atualizado no dinâmico universo da tecnologia.
         </p>
@@ -40,21 +40,21 @@ const Hero = () => {
             <a
               className="icon icon-instagram"
               href="https://www.instagram.com/nobre.janio/"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             ></a>
           </div>
           <div>
             <a
               className="icon icon-github"
               href="https://github.com/NobreJanio"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             ></a>
           </div>
           <div>
             <a
               className="icon icon-linkedin"
               href="https://www.linkedin.com/in/janiojunior31/"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             ></a>
           </div>
         </div>
