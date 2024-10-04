@@ -26,13 +26,13 @@ export const myProjects = [
   { projectTitle: "react project", category: ["react"], imgPath: "./17.png", descrition: "Ecommerce com Strapi", link: "https://ecommerce-90e52.web.app" },
   { projectTitle: "react project", category: ["react"], imgPath: "./18.png", descrition: "Ecommerce com redux, redux tookit, slick, react-router-dom", link: "https://lojafrutas-e2efc.web.app" },
 
-  { projectTitle: "vue project", category: ["vue"], imgPath: "./21.png", descrition: "Restaurante Tokyo Sushi", link: "https://tokyo-sushi-d96d6.web.app" },
-  { projectTitle: "vue project", category: ["vue"], imgPath: "./22.png", descrition: "Restaurante Tokyo Sushi", link: "https://ecommerce-roupas-vue.web.app" },
+  //{ projectTitle: "vue project", category: ["vue"], imgPath: "./21.png", descrition: "Restaurante Tokyo Sushi", link: "https://tokyo-sushi-d96d6.web.app" },
+  { projectTitle: "vue project", category: ["vue"], imgPath: "./22.png", descrition: "Loja de roupas", link: "https://ecommerce-roupas-vue.web.app" },
 
 
   { projectTitle: "svelte project", category: ["svelte"], imgPath: "./20.png", descrition: "Chat em tempo real", link: "https://github.com/NobreJanio/realtime-chatapp" },
 
-  { projectTitle: "flutter project", category: ["flutter"], imgPath: "./19.jpg", descrition: "Chat em tempo real", link: "https://github.com/NobreJanio/Avatar_Generation" }
+  //{ projectTitle: "flutter project", category: ["flutter"], imgPath: "./19.jpg", descrition: "Chat em tempo real", link: "https://github.com/NobreJanio/Avatar_Generation" }
 
 
 

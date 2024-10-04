@@ -94,14 +94,7 @@ const Main = () => {
           Svelte
         </button>
 
-        <button
-          onClick={() => {
-            handleClick("flutter");
-          }}
-          className={currentActive === "flutter" ? "active" : null}
-        >
-          Flutter
-        </button>
+
       </section>
 
       <section className=" flex right-section">
