@@ -4,7 +4,7 @@ export const myProjects = [
   //{ projectTitle: "Anna Bella",           category: ["css"], imgPath: "./1.png", descrition: "Perfil de uma modelo fictícia com o layout feito em tabelas.", link: "https://6595a89e847cc9006827db35--capable-squirrel-a738ee.netlify.app/"  },
   //{ projectTitle: "TecBlog",              category: ["css"], imgPath: "./3.png", descrition: "Página no estilo de blog.", link: "https://6595a82791a9f4059cf726c6--phenomenal-rugelach-a0f304.netlify.app/" },
   //{ projectTitle: "Notícias Cidade",      category: ["css"], imgPath: "./2.png", descrition: "Página de notícias fictias feito em colunas.", link: "https://6595a871a056530452f24ac4--transcendent-elf-4445c8.netlify.app/" }, 
-  { projectTitle: "Restaurante (Modelo)", category: ["css"], imgPath: "./5.png", descrition: "Modelo de página de um restaurante fictício", link: "https://main--restaurantenobre.netlify.app/" },
+  { projectTitle: "Restaurante (Modelo)", category: ["css"], imgPath: "./5.png", descrition: "Modelo de página de um restaurante fictício", link: "https://steady-sundae-83389f.netlify.app/" },
 
   //{ projectTitle: "Conversor de Moedas",          category: ["js"], imgPath: "./6.png", descrition: "Conversor de moedas de reais para dolar, euro, libra e bitcoin", link: "https://6595a92d0d0f0a006f579e4e--iridescent-youtiao-eb32a6.netlify.app/" },
   //{ projectTitle: "Dia dos Namorados",            category: ["js"], imgPath: "./7.png", descrition: "Projeto pessoal feito para minha namorada", link: "https://6595a9afa5d8a2006697edb9--comforting-truffle-fd6f65.netlify.app/" },
@@ -25,7 +25,8 @@ export const myProjects = [
   { projectTitle: "react project", category: ["react"], imgPath: "./9.png", descrition: "Próprio porffolio feito em React + Vite", link: "https://github.com/NobreJanio/Portfolio.git" },
   { projectTitle: "react project", category: ["react"], imgPath: "./17.png", descrition: "Ecommerce com Strapi", link: "https://ecommerce-90e52.web.app" },
   { projectTitle: "react project", category: ["react"], imgPath: "./18.png", descrition: "Ecommerce com redux, redux tookit, slick, react-router-dom", link: "https://lojafrutas-e2efc.web.app" },
-  { projectTitle: "react project", category: ["react"], imgPath: "./23.png", descrition: "Burgeria frontend e backend com styled-components, jwt, strepi, MongoDB, Postgresql, docker ... ", link: "https://blastburger-5f44f.web.app" },
+  { projectTitle: "react project", category: ["react"], imgPath: "./23.png", descrition: "Burgeria frontend e backend com styled-components, jwt, strepi, MongoDB, Postgresql, docker ... ", link: "https://github.com/NobreJanio/BlastBurger2" },
+  { projectTitle: "react project", category: ["react"], imgPath: "./24.png", descrition: "Burgeria frontend e backend com styled-components, jwt, strepi, MongoDB, Postgresql, docker ... ", link: "https://github.com/NobreJanio/BlastBurger--Backend" },
 
   //{ projectTitle: "vue project", category: ["vue"], imgPath: "./21.png", descrition: "Restaurante Tokyo Sushi", link: "https://tokyo-sushi-d96d6.web.app" },
   { projectTitle: "vue project", category: ["vue"], imgPath: "./22.png", descrition: "Loja de roupas", link: "https://ecommerce-roupas-vue.web.app" },
