@@ -87,6 +87,15 @@ const Main = () => {
 
         <button
           onClick={() => {
+            handleClick("java");
+          }}
+          className={currentActive === "java" ? "active" : null}
+        >
+          Java
+        </button>
+
+        <button
+          onClick={() => {
             handleClick("svelte");
           }}
           className={currentActive === "svelte" ? "active" : null}

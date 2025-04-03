@@ -31,6 +31,8 @@ export const myProjects = [
   //{ projectTitle: "vue project", category: ["vue"], imgPath: "./21.png", descrition: "Restaurante Tokyo Sushi", link: "https://tokyo-sushi-d96d6.web.app" },
   { projectTitle: "vue project", category: ["vue"], imgPath: "./22.png", descrition: "Loja de roupas", link: "https://ecommerce-roupas-vue.web.app" },
 
+  { projectTitle: "java bibliotaca-api", category: ["java"], imgPath: "./25.png", descrition: "Esta API permite o gerenciamento completo de uma biblioteca, oferecendo funcionalidades para controle de livros, usuários, empréstimos e categorias, com uma interface de documentação interativa através do Swagger UI.", link: "https://github.com/NobreJanio/biblioteca-api" },
+
 
   { projectTitle: "svelte project", category: ["svelte"], imgPath: "./20.png", descrition: "Chat em tempo real", link: "https://github.com/NobreJanio/realtime-chatapp" },
 
