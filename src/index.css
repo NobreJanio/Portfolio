@@ -58,6 +58,7 @@ body {
 .container {
   border: 2px solid var(--border);
   width: 90%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary);
@@ -125,6 +126,7 @@ button:disabled {
 
 ::-webkit-scrollbar {
   width: 0.8rem;
+  height: 0; /* Remove a barra de rolagem horizontal */
 }
 
 ::-webkit-scrollbar-track {
@@ -178,4 +180,32 @@ html {
     opacity: 0.6;
     font-size: 1rem;
   }
+}
+
+html, body {
+  height: 100%;
+  background-color: #000;
+}
+
+.darkhole-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.centerHover {
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.centerHover.open {
+  transform: scale(1.2);
+}
+
+.centerHover:hover {
+  transform: scale(1.1);
 }

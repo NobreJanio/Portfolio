@@ -13,22 +13,28 @@
     "@firebase/auth": "^1.9.1",
     "@formspree/react": "^2.5.1",
     "firebase": "^11.4.0",
+    "font-awesome": "^4.7.0",
     "framer-motion": "^10.16.16",
     "lottie-react": "^2.4.0",
+    "particles.js": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-firebase-hooks": "^5.1.1"
+    "react-firebase-hooks": "^5.1.1",
+    "react-router-dom": "^7.4.1"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.29",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.21",
     "eslint": "^8.53.0",
     "eslint-plugin-jquery": "^1.5.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.2",
     "vite": "^5.0.0"
   }
 }

@@ -13,6 +13,11 @@ function App() {
       } else {
         setshowScrollBTN(false);
       }
+      
+      // Voltar à tela inicial quando rolar para cima no topo da página
+      if (window.scrollY === 0) {
+        window.location.href = "/";
+      }
     });
   }, []);
 
