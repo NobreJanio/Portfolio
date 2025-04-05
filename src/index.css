@@ -187,14 +187,6 @@ html, body {
   background-color: #000;
 }
 
-.darkhole-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #000;
-}
-
 .centerHover {
   cursor: pointer;
   color: #fff;

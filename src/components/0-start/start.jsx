@@ -6,7 +6,6 @@ import "./styles.css";
 
 const Portfolio = () => {
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [isDarkTheme, setIsDarkTheme] = useState(true);
   const containerRef = useRef(null);
   const navigate = useNavigate();
 
@@ -22,18 +21,6 @@ const Portfolio = () => {
         document.exitFullscreen();
         setIsFullscreen(false);
       }
-    }
-  };
-
-  // Função para alternar entre tema claro e escuro
-  const toggleTheme = () => {
-    const newTheme = !isDarkTheme;
-    setIsDarkTheme(newTheme);
-    
-    if (newTheme) {
-      document.documentElement.classList.remove('light-theme');
-    } else {
-      document.documentElement.classList.add('light-theme');
     }
   };
 
@@ -195,14 +182,6 @@ const Portfolio = () => {
       >
         {isFullscreen ? "⤓" : "⤢"}
       </button>
-      
-      <button 
-        className="theme-toggle-button" 
-        onClick={toggleTheme}
-        aria-label={isDarkTheme ? "Mudar para tema claro" : "Mudar para tema escuro"}
-      >
-        {isDarkTheme ? "☀️" : "🌙"}
-      </button>
 
       <div className="container" ref={containerRef}>
         <div className="content">
@@ -222,7 +201,7 @@ const Portfolio = () => {
           <button className="portfolio-button" onClick={navigateToMain}>Acessar Portfólio</button>
           <div className="scroll-indicator" onClick={scrollToNextSection}>
             <p>Role para baixo ou clique no botão para continuar</p>
-            <i className="fas fa-chevron-down">▼</i>
+            <i className="fas fa-chevron-down">↓</i>
           </div>
         </div>
       </div>
