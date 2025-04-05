@@ -6,6 +6,7 @@ import "./styles.css";
 
 const Portfolio = () => {
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
   const containerRef = useRef(null);
   const navigate = useNavigate();
 
@@ -21,6 +22,18 @@ const Portfolio = () => {
         document.exitFullscreen();
         setIsFullscreen(false);
       }
+    }
+  };
+
+  // Função para alternar entre tema claro e escuro
+  const toggleTheme = () => {
+    const newTheme = !isDarkTheme;
+    setIsDarkTheme(newTheme);
+    
+    if (newTheme) {
+      document.documentElement.classList.remove('light-theme');
+    } else {
+      document.documentElement.classList.add('light-theme');
     }
   };
 
@@ -71,7 +84,7 @@ const Portfolio = () => {
             }
           },
           "color": {
-            "value": "#3b82f6"
+            "value": ["#00d9ff", "#0066ff", "#3b82f6"]
           },
           "shape": {
             "type": "circle",
@@ -84,12 +97,12 @@ const Portfolio = () => {
             }
           },
           "opacity": {
-            "value": 0.5,
-            "random": false,
+            "value": 0.7,
+            "random": true,
             "anim": {
-              "enable": false,
+              "enable": true,
               "speed": 1,
-              "opacity_min": 0.1,
+              "opacity_min": 0.3,
               "sync": false
             }
           },
@@ -106,8 +119,8 @@ const Portfolio = () => {
           "line_linked": {
             "enable": true,
             "distance": 150,
-            "color": "#3b82f6",
-            "opacity": 0.4,
+            "color": "#00d9ff",
+            "opacity": 0.6,
             "width": 1
           },
           "move": {
@@ -182,6 +195,14 @@ const Portfolio = () => {
       >
         {isFullscreen ? "⤓" : "⤢"}
       </button>
+      
+      <button 
+        className="theme-toggle-button" 
+        onClick={toggleTheme}
+        aria-label={isDarkTheme ? "Mudar para tema claro" : "Mudar para tema escuro"}
+      >
+        {isDarkTheme ? "☀️" : "🌙"}
+      </button>
 
       <div className="container" ref={containerRef}>
         <div className="content">
@@ -201,7 +222,7 @@ const Portfolio = () => {
           <button className="portfolio-button" onClick={navigateToMain}>Acessar Portfólio</button>
           <div className="scroll-indicator" onClick={scrollToNextSection}>
             <p>Role para baixo ou clique no botão para continuar</p>
-            <i className="fas fa-chevron-down"></i>
+            <i className="fas fa-chevron-down">▼</i>
           </div>
         </div>
       </div>

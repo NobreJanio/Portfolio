@@ -4,7 +4,14 @@
   --primary-color: rgb(0, 217, 255);
   --secondary-color: #0066ff;
   --text-color: #ffffff;
-  --background-gradient: linear-gradient(to bottom, #222, #000);
+  --background-gradient: linear-gradient(to bottom, #0a1929, #000);
+}
+
+:root.light-theme {
+  --primary-color: #0066ff;
+  --secondary-color: rgb(0, 217, 255);
+  --text-color: #333333;
+  --background-gradient: linear-gradient(to bottom, #f0f8ff, #e6f2ff);
 }
 
 body {
@@ -13,13 +20,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
-  
+  background: var(--background-gradient);
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  overflow-x: hidden;
-  
+  overflow-x: auto;
+  color: var(--text-color);
 }
 
 .container {
@@ -30,7 +37,7 @@ body {
   z-index: 1;
   height: 100vh;
   width: 100%;
-  overflow-y: auto;
+  overflow: hidden;
   scroll-snap-type: y mandatory;
 }
 
@@ -42,6 +49,7 @@ body {
   min-height: 100vh;
   width: 100%;
   scroll-snap-align: start;
+  padding: 20px;
 }
 
 .sphere {
@@ -139,7 +147,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: white;
+  background: var(--background-gradient);
   z-index: 0;
 }
 
@@ -150,10 +158,11 @@ body {
 
 .typing {
   overflow: hidden;
-  color: black;
+  color: grey;
+  font-size: large;
   white-space: nowrap;
-  border-right: 2px solid #3b82f6;
-  animation: typing 3.5s steps(40, end), forwards blink-caret .75s step-end infinite;
+  border-right: 2px solid var(--primary-color);
+  animation: typing 2s steps(10, end) normal, blink-caret .30s step-end infinite;
 }
 
 @keyframes typing {
@@ -205,14 +214,30 @@ body {
 }
 
 .scroll-indicator p {
-  font-size: 14px;
-  opacity: 0.7;
+  font-size: 16px;
+  opacity: 0.9;
+  color: gray;
+  margin-top: 25px;
 }
 
 .scroll-indicator i {
   font-size: 24px;
   margin-top: 5px;
+  color: gray;
   animation: bounce 1.5s infinite;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }
 
 .fullscreen-button {
@@ -234,7 +259,26 @@ body {
   z-index: 100;
 }
 
-.fullscreen-button:hover {
+.theme-toggle-button {
+  position: fixed;
+  top: 20px;
+  right: 70px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 217, 255, 0.3);
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  z-index: 100;
+}
+
+.fullscreen-button:hover, .theme-toggle-button:hover {
   background: var(--primary-color);
 }
 
