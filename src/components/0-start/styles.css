@@ -43,6 +43,13 @@ body {
   width: 100%;
   scroll-snap-align: start;
   padding: 20px;
+  opacity: 0;
+  animation: fadeContent 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeContent {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .sphere {
@@ -51,7 +58,25 @@ body {
   border-radius: 50%;
   background: radial-gradient(circle at 30% 30%, rgb(0, 217, 255), #0044ff);
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
+  box-shadow: 0 0 25px 10px rgba(0, 217, 255, 0.7);
+  -webkit-box-shadow: 0 0 25px 10px rgba(0, 217, 255, 0.7);
+  -moz-box-shadow: 0 0 25px 10px rgba(0, 217, 255, 0.7);
+  -webkit-animation: glow 3s ease-in-out infinite alternate;
+  -moz-animation: glow 3s ease-in-out infinite alternate;
+  -o-animation: glow 3s ease-in-out infinite alternate;
+  animation: glow 3s ease-in-out infinite alternate;
+  /* Reforçando o efeito de glow com uma borda adicional */
+  border: 3px solid rgba(0, 217, 255, 0.5);
+  /* Adicionando filtro para reforçar o brilho */
+  filter: drop-shadow(0 0 15px rgba(0, 217, 255, 0.9));
+  -webkit-filter: drop-shadow(0 0 15px rgba(0, 217, 255, 0.9));
+  transform: translateZ(0); /* Força o uso de aceleração de hardware */
+  -webkit-transform: translateZ(0);
+  will-change: box-shadow, filter; /* Otimiza a animação */
+  /* Adicionando propriedades para garantir compatibilidade em diferentes navegadores */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .sphere-reflection {
@@ -96,12 +121,102 @@ body {
   }
 }
 
+@-webkit-keyframes glow {
+  0% {
+    -webkit-box-shadow: 0 0 30px 15px rgba(0, 217, 255, 0.7);
+    box-shadow: 0 0 30px 15px rgba(0, 217, 255, 0.7);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 50px 25px rgba(0, 102, 255, 0.9);
+    box-shadow: 0 0 50px 25px rgba(0, 102, 255, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 30px 15px rgba(0, 217, 255, 0.7);
+    box-shadow: 0 0 30px 15px rgba(0, 217, 255, 0.7);
+  }
+}
+
+@-moz-keyframes glow {
+  0% {
+    -moz-box-shadow: 0 0 30px 15px rgba(0, 217, 255, 0.7);
+    box-shadow: 0 0 30px 15px rgba(0, 217, 255, 0.7);
+  }
+  50% {
+    -moz-box-shadow: 0 0 50px 25px rgba(0, 102, 255, 0.9);
+    box-shadow: 0 0 50px 25px rgba(0, 102, 255, 0.9);
+  }
+  100% {
+    -moz-box-shadow: 0 0 30px 15px rgba(0, 217, 255, 0.7);
+    box-shadow: 0 0 30px 15px rgba(0, 217, 255, 0.7);
+  }
+}
+
+@-o-keyframes glow {
+  0% {
+    -o-box-shadow: 0 0 30px 15px rgba(0, 217, 255, 0.7);
+    box-shadow: 0 0 30px 15px rgba(0, 217, 255, 0.7);
+  }
+  50% {
+    -o-box-shadow: 0 0 50px 25px rgba(0, 102, 255, 0.9);
+    box-shadow: 0 0 50px 25px rgba(0, 102, 255, 0.9);
+  }
+  100% {
+    -o-box-shadow: 0 0 30px 15px rgba(0, 217, 255, 0.7);
+    box-shadow: 0 0 30px 15px rgba(0, 217, 255, 0.7);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 30px 15px rgba(0, 217, 255, 0.7);
+    filter: drop-shadow(0 0 20px rgba(0, 217, 255, 0.8));
+  }
+  50% {
+    box-shadow: 0 0 50px 25px rgba(0, 102, 255, 0.9);
+    filter: drop-shadow(0 0 25px rgba(0, 102, 255, 1));
+  }
+  100% {
+    box-shadow: 0 0 30px 15px rgba(0, 217, 255, 0.7);
+    filter: drop-shadow(0 0 20px rgba(0, 217, 255, 0.8));
+  }
+}
+
 .sphere-overlay {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   position: absolute;
   background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.sphere-border {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid rgba(0, 217, 255, 0.6);
+  box-shadow: 0 0 20px 5px rgba(0, 217, 255, 0.8);
+  filter: blur(3px);
+  animation: pulse 3s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
 }
 
 .initials {
@@ -155,12 +270,18 @@ body {
   font-size: large;
   white-space: nowrap;
   border-right: 2px solid var(--primary-color);
-  animation: typing 2s steps(10, end) normal, blink-caret .30s step-end infinite;
+  animation: typing 3s steps(30, end) forwards, blink-caret .75s step-end infinite;
+  width: 0;
 }
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 19% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--primary-color) }
 }
 
 .social-links {
@@ -216,7 +337,7 @@ body {
 .scroll-indicator i {
   font-size: 24px;
   margin-top: 5px;
-  color: var(--primary-color);
+  color: gray;
   animation: bounce 1.5s infinite ease-in-out;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: block;
