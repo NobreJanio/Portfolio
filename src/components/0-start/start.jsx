@@ -29,11 +29,6 @@ const Portfolio = () => {
     navigate("/main");
   };
 
-  // Função para navegar para a página principal ao rolar
-  const scrollToNextSection = () => {
-    navigate("/main");
-  };
-
   // Detectar rolagem para baixo e navegar para a página principal
   useEffect(() => {
     const handleScroll = () => {
@@ -199,7 +194,7 @@ const Portfolio = () => {
             <a href="https://www.instagram.com/nobre.janio/" className="social-icon instagram"></a>
           </div>
           <button className="portfolio-button" onClick={navigateToMain}>Acessar Portfólio</button>
-          <div className="scroll-indicator" onClick={scrollToNextSection}>
+          <div className="scroll-indicator" onClick={navigateToMain}>
             <p>Role para baixo ou clique no botão para continuar</p>
             <i className="fas fa-chevron-down">↓</i>
           </div>

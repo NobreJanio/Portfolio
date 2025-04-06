@@ -186,18 +186,3 @@ html, body {
   height: 100%;
   background-color: #000;
 }
-
-.centerHover {
-  cursor: pointer;
-  color: #fff;
-  font-size: 2rem;
-  transition: transform 0.3s ease;
-}
-
-.centerHover.open {
-  transform: scale(1.2);
-}
-
-.centerHover:hover {
-  transform: scale(1.1);
-}
