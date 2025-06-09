@@ -23,10 +23,10 @@ export const myProjects = [
   { projectTitle: "angular project", category: ["angular"], imgPath: "./8.png", descrition: "Layout de um e-commerce feito em Angular e Express", link: "https://github.com/NobreJanio/projeto-angular1.git" },
 
   { projectTitle: "react project", category: ["react"], imgPath: "./9.png", descrition: "Próprio porffolio feito em React + Vite", link: "https://github.com/NobreJanio/Portfolio.git" },
-  { projectTitle: "react project", category: ["react"], imgPath: "./17.png", descrition: "Ecommerce com Strapi", link: "https://ecommerce-90e52.web.app" },
+  { projectTitle: "react project", category: ["react"], imgPath: "./17.png", descrition: "Ecommerce com Strapi", link: "https://github.com/NobreJanio/Ecommerce-React-with-Strapi" },
   { projectTitle: "react project", category: ["react"], imgPath: "./18.png", descrition: "Ecommerce com redux, redux tookit, slick, react-router-dom", link: "https://lojafrutas-e2efc.web.app" },
-  { projectTitle: "react project", category: ["react"], imgPath: "./23.png", descrition: "Burgeria frontend e backend com styled-components, jwt, strepi, MongoDB, Postgresql, docker ... ", link: "https://github.com/NobreJanio/BlastBurger2" },
-  { projectTitle: "react project", category: ["react"], imgPath: "./24.png", descrition: "Burgeria frontend e backend com styled-components, jwt, strepi, MongoDB, Postgresql, docker ... ", link: "https://github.com/NobreJanio/BlastBurger--Backend" },
+  { projectTitle: "react project", category: ["react"], imgPath: "./23.png", descrition: "Burgeria frontend e backend com styled-components, jwt, strepi, MongoDB, Postgresql, docker ... ", link: "https://github.com/NobreJanio/BlastBurger--Backend" },
+  { projectTitle: "react project", category: ["react"], imgPath: "./24.png", descrition: "Burgeria frontend e backend com styled-components, jwt, strepi, MongoDB, Postgresql, docker ... ", link: "https://github.com/NobreJanio/BlastBurger2" },
 
   //{ projectTitle: "vue project", category: ["vue"], imgPath: "./21.png", descrition: "Restaurante Tokyo Sushi", link: "https://tokyo-sushi-d96d6.web.app" },
   { projectTitle: "vue project", category: ["vue"], imgPath: "./22.png", descrition: "Loja de roupas", link: "https://ecommerce-roupas-vue.web.app" },
