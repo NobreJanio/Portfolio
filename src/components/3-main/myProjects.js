@@ -26,7 +26,7 @@ export const myProjects = [
   { projectTitle: "react project", category: ["react"], imgPath: "./17.png", descrition: "Ecommerce com Strapi", link: "https://github.com/NobreJanio/Ecommerce-React-with-Strapi" },
   { projectTitle: "react project", category: ["react"], imgPath: "./18.png", descrition: "Ecommerce com redux, redux tookit, slick, react-router-dom", link: "https://lojafrutas-e2efc.web.app" },
   { projectTitle: "react project", category: ["react"], imgPath: "./23.png", descrition: "Burgeria frontend e backend com styled-components, jwt, strepi, MongoDB, Postgresql, docker ... ", link: "https://github.com/NobreJanio/BlastBurger--Backend" },
-  { projectTitle: "react project", category: ["react"], imgPath: "./24.png", descrition: "Burgeria frontend e backend com styled-components, jwt, strepi, MongoDB, Postgresql, docker ... ", link: "https://github.com/NobreJanio/BlastBurger2" },
+  { projectTitle: "react project", category: ["react"], imgPath: "./24.png", descrition: "Burgeria frontend e backend com styled-components, jwt, strepi, MongoDB, Postgresql, docker ... ", link: "https://github.com/NobreJanio/BlastBurger2-main" },
 
   //{ projectTitle: "vue project", category: ["vue"], imgPath: "./21.png", descrition: "Restaurante Tokyo Sushi", link: "https://tokyo-sushi-d96d6.web.app" },
   { projectTitle: "vue project", category: ["vue"], imgPath: "./22.png", descrition: "Loja de roupas", link: "https://ecommerce-roupas-vue.web.app" },
@@ -37,7 +37,4 @@ export const myProjects = [
   { projectTitle: "svelte project", category: ["svelte"], imgPath: "./20.png", descrition: "Chat em tempo real", link: "https://github.com/NobreJanio/realtime-chatapp" },
 
   //{ projectTitle: "flutter project", category: ["flutter"], imgPath: "./19.jpg", descrition: "Chat em tempo real", link: "https://github.com/NobreJanio/Avatar_Generation" }
-
-
-
 ];
